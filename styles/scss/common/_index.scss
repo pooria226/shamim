@@ -1,0 +1,53 @@
+@import "../theme/index";
+// Start Content
+.content {
+  background-color: $teal;
+}
+
+// End Content
+
+// Start Header Switch
+.ant-switch {
+  min-width: 40px;
+  width: 40px;
+  background-color: rgb(212, 218, 232) !important;
+  .ant-switch-handle {
+    width: 12px;
+    height: 12px;
+    top: 5px;
+  }
+
+  .ant-switch-inner .ant-switch-inner-checked {
+    margin-inline-start: calc(-100% + 22px - 50px) !important;
+  }
+}
+.ant-switch .ant-switch-inner .ant-switch-inner-unchecked {
+  margin-top: -10px;
+}
+
+.ant-switch .ant-switch-handle {
+  inset-inline-start: 4px !important;
+}
+.ant-switch.ant-switch-checked {
+  .ant-switch-handle {
+    inset-inline-start: calc(100% - 17px) !important;
+  }
+  .ant-switch-inner {
+    position: relative;
+    top: -2px;
+  }
+  .ant-switch-handle {
+    width: 12px;
+    height: 12px;
+    top: 5px;
+  }
+  .ant-switch-inner {
+    .ant-switch-inner-checked {
+      position: relative;
+      top: 3px;
+      right: -4px;
+      margin-inline-start: inherit !important;
+    }
+  }
+}
+// End Header Switch

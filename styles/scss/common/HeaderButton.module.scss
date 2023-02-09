@@ -1,0 +1,55 @@
+@import "../theme/index";
+.lightButton {
+  background-color: white;
+  border: 2px solid rgb(231, 236, 242);
+  padding: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: white;
+    border: 2px solid rgb(231, 236, 242) !important;
+  }
+  &:focus {
+    background-color: white;
+    border: 2px solid rgb(231, 236, 242) !important;
+  }
+}
+.darkButton {
+  background-color: white;
+  border: 2px solid rgb(231, 236, 242);
+  padding: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: white;
+    border: 2px solid rgb(231, 236, 242) !important;
+  }
+  &:focus {
+    background-color: white;
+    border: 2px solid rgb(231, 236, 242) !important;
+  }
+}
+
+.badge {
+  width: 15px;
+  height: 15px;
+  background-color: $focused;
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+  top: -2.5px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 2;
+}

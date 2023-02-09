@@ -1,0 +1,49 @@
+@import "../theme/index";
+.openWrapper {
+  width: 280px;
+  box-shadow: 0px 0px 10px #f2f2f2;
+  height: calc(100vh - 80px);
+  position: relative;
+  top: -1px;
+}
+.closeWrapper {
+}
+
+.lightTab {
+  height: 35px;
+  font-size: 16px;
+  text-align: right;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  color: $primary;
+}
+.lightTabActive {
+  height: 45px;
+  font-size: 17px;
+  text-align: right;
+  margin-bottom: 10px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: $focused;
+  background-color: $teal;
+  border-radius: 8px;
+  font-weight: 600;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  svg,
+  path {
+    fill: $focused !important;
+  }
+  &::before {
+    content: "";
+    width: 4px;
+    height: 45px;
+    background-color: $focused;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+}
