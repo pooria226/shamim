@@ -34,7 +34,7 @@ const UserLayout = ({ children, title }) => {
       <div>
         <UserHeader />
         <div className="flex">
-          <div className="content w-full">{children}</div>
+          <div className="content w-full pr-2">{children}</div>
           <SidebarItem router={router} />
         </div>
       </div>

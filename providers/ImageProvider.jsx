@@ -5,12 +5,12 @@ export default function ImageProvider({
   alt,
   height = null,
   width = null,
-  className,
   layout,
   unoptimized,
   priority,
   src,
   objectFit,
+  styles,
 }) {
   return (
     <>
@@ -21,9 +21,9 @@ export default function ImageProvider({
         blurDataURL="/images/image-placeholder.png"
         layout={layout}
         {...(layout != "fill" ? { height, width } : {})}
-        className={className}
         unoptimized={unoptimized}
         priority={priority}
+        style={styles}
       />
     </>
   );

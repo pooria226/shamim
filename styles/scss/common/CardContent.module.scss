@@ -1,0 +1,137 @@
+@import "../theme/index";
+.lightWrapper {
+  background-color: white;
+  border-radius: 16px;
+  margin-left: 6px;
+  margin-right: 24px;
+  margin-top: 32px;
+  padding: 16px;
+}
+.darkWrapper {
+  background-color: white;
+  border-radius: 16px;
+  margin-left: 6px;
+  margin-right: 24px;
+  margin-top: 32px;
+  padding: 16px;
+}
+
+.lightCard {
+  box-shadow: 0 0 8px #f2f2f2;
+  border-radius: 16px;
+  overflow: hidden;
+  .cardFooter {
+    padding: 16px;
+    text-align: right;
+    color: $primary;
+  }
+  .menuBar {
+    button {
+      position: absolute;
+      z-index: 2;
+      background-color: white;
+      right: 16px;
+      top: 16px;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      path,
+      svg {
+        fill: dark !important;
+      }
+    }
+  }
+}
+
+.cardDivider {
+  text-align: right;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  .text {
+    color: $focused;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .lightEditButton {
+    background-color: transparent;
+    border: 0 !important;
+    box-shadow: 0 0 0px;
+    padding: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    svg,
+    path {
+      fill: $primary;
+    }
+  }
+  .darkEditButton {
+    background-color: transparent;
+    border: 0 !important;
+    box-shadow: 0 0 0px;
+    padding: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    svg,
+    path {
+      fill: $primary;
+    }
+  }
+  .trashButton {
+    background-color: transparent;
+    border: 0 !important;
+    box-shadow: 0 0 0px;
+    padding: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    svg,
+    path {
+      fill: $danger;
+    }
+  }
+}
+.wrapperAdd {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 65%;
+  margin-top: 60px;
+  align-items: center;
+}
+.addButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  height: auto;
+  box-shadow: 0 0 0px;
+  text-align: center;
+  color: $focused;
+  font-size: 12px;
+  svg,
+  path {
+    fill: $focused;
+  }
+}
+.showMore {
+  border: 0;
+  background-color: 0;
+  box-shadow: 0 0 0px;
+  color: $primary !important;
+  font-size: 12px;
+  height: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .wrapperAdd {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+}

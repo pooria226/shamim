@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import TabItem from "../shared/TabItem";
 import Styles from "@/styles/scss/common/SidebarItem.module.scss";
 import DashboardIcon from "public/assets/images/svgs/dashboard.svg";
@@ -7,6 +7,7 @@ import UserIcon from "public/assets/images/svgs/user.svg";
 import ChatIcon from "public/assets/images/svgs/chat.svg";
 import SmsIcon from "public/assets/images/svgs/sms.svg";
 import BillIcon from "public/assets/images/svgs/bill.svg";
+import ArrowIcon from "public/assets/images/svgs/arrow.svg";
 import BarcodeIcon from "public/assets/images/svgs/barcode.svg";
 export default function SidebarItem({ router }) {
   return (
@@ -24,6 +25,9 @@ export default function SidebarItem({ router }) {
         <TabItem icon={<UserIcon />} text="عضویت در کانتمو" />
         <TabItem icon={<BarcodeIcon />} text="نمایش اثار" />
       </Col>
+      <Button className={Styles.lightCloseButton}>
+        <ArrowIcon />
+      </Button>
     </Row>
   );
 }

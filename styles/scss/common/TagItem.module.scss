@@ -1,0 +1,15 @@
+@import "../theme/index";
+.wrapper {
+  background-color: $teal;
+  border-radius: 16px;
+  font-size: 14px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}

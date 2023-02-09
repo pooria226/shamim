@@ -1,0 +1,48 @@
+@import "../theme/index";
+.lightText {
+  color: $primary;
+  font-size: 18px;
+  font-weight: 600;
+}
+.lightType {
+  color: $primary;
+  font-size: 14px;
+}
+.darkType {
+  color: $primary;
+  font-size: 14px;
+}
+
+.wrapperButton {
+  background-color: rgb(212, 218, 232) !important;
+  border-radius: 16px;
+  height: 35px;
+  width: 80px;
+  display: flex;
+  padding: 4px;
+  .leftButton {
+    width: 50%;
+    border: 0;
+    padding: 0;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    height: 26.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+  }
+  .rightButton {
+    background-color: white;
+    width: 50%;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    height: 26.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../theme/index";
+.lightText {
+  color: $primary;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.darkText {
+}
+.seprator {
+  width: 100%;
+  height: 0.5px;
+  background-color: $primary;
+  margin-left: 8px;
+  margin-right: 8px;
+}

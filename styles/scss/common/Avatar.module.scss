@@ -1,0 +1,26 @@
+@import "../theme/index";
+.wrapperImg {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid $focused;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text {
+  color: $focused;
+  font-size: 18px;
+  padding-top: 8px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.wrapperIcon {
+  border: 1px solid rgb(231, 236, 242);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
