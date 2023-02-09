@@ -17,7 +17,7 @@ export default function ImageProvider({
       <Image
         objectFit={objectFit}
         src={src}
-        alt={alt}
+        alt={"alt"}
         blurDataURL="/images/image-placeholder.png"
         layout={layout}
         {...(layout != "fill" ? { height, width } : {})}

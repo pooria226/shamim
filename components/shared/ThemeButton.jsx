@@ -3,7 +3,7 @@ import { Switch } from "antd";
 import MoonIcon from "public/assets/images/svgs/moon.svg";
 import SunIcon from "public/assets/images/svgs/sun.svg";
 import Styles from "@/styles/scss/common/ThemeButton.module.scss";
-export default function ThemeButton() {
+export default function ThemeButton({ handleChangeTheme }) {
   return (
     <div className={Styles.wrapper}>
       <Switch
@@ -14,6 +14,7 @@ export default function ThemeButton() {
         }
         unCheckedChildren={<SunIcon />}
         defaultChecked
+        onChange={() => handleChangeTheme()}
       />
     </div>
   );

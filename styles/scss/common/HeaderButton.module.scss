@@ -19,8 +19,8 @@
   }
 }
 .darkButton {
-  background-color: white;
-  border: 2px solid rgb(231, 236, 242);
+  background-color: $dark-background2;
+  border: 2px solid $dark-border;
   padding: 0;
   border-radius: 50%;
   width: 40px;
@@ -30,11 +30,11 @@
   align-items: center;
   &:hover {
     background-color: white;
-    border: 2px solid rgb(231, 236, 242) !important;
+    border: 2px solid $dark-border !important;
   }
   &:focus {
     background-color: white;
-    border: 2px solid rgb(231, 236, 242) !important;
+    border: 2px solid $dark-border !important;
   }
 }
 
@@ -52,4 +52,10 @@
   align-items: center;
   color: white;
   line-height: 2;
+}
+@media only screen and (max-width: 768px) {
+  .lightButton {
+    width: 30px;
+    height: 30px;
+  }
 }

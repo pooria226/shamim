@@ -8,7 +8,7 @@
   padding: 16px;
 }
 .darkWrapper {
-  background-color: white;
+  background-color: $dark-background;
   border-radius: 16px;
   margin-left: 6px;
   margin-right: 24px;
@@ -24,6 +24,39 @@
     padding: 16px;
     text-align: right;
     color: $primary;
+  }
+  .menuBar {
+    button {
+      position: absolute;
+      z-index: 2;
+      background-color: white;
+      right: 16px;
+      top: 16px;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      path,
+      svg {
+        fill: dark !important;
+      }
+    }
+  }
+}
+
+.darkCard {
+  box-shadow: 0 0 8px $dark-background2;
+  border-radius: 16px;
+  overflow: hidden;
+  .cardFooter {
+    padding: 16px;
+    text-align: right;
+    color: $primary;
+    color: white;
   }
   .menuBar {
     button {
@@ -118,11 +151,19 @@
     fill: $focused;
   }
 }
-.showMore {
+.lightShowMore {
   border: 0;
   background-color: 0;
   box-shadow: 0 0 0px;
   color: $primary !important;
+  font-size: 12px;
+  height: auto;
+}
+.darkShowMore {
+  border: 0;
+  background-color: 0;
+  box-shadow: 0 0 0px;
+  color: white !important;
   font-size: 12px;
   height: auto;
 }
@@ -133,5 +174,9 @@
     align-items: center;
     width: 100%;
     margin-top: 40px;
+  }
+  .lightWrapper {
+    margin-left: 4px;
+    margin-right: 4px;
   }
 }

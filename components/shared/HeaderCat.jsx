@@ -5,7 +5,7 @@ import FolderIcon from "public/assets/images/svgs/folder.svg";
 import AlignIcon from "public/assets/images/svgs/align.svg";
 export default function HeaderCat() {
   return (
-    <Row className="pl-1 pr-6 pt-2">
+    <Row className="pl-1 md:pr-6 pr-2 pt-2">
       <Col span={24}>
         <div className="flex justify-between">
           <div className="flex items-center">

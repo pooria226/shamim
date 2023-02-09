@@ -1,10 +1,18 @@
 @import "../theme/index";
-// Start Content
-.content {
-  background-color: $teal;
+.light-body {
+  // Start Content
+  .content {
+    background-color: $teal;
+  }
+  // End Content
 }
-
-// End Content
+.dark-body {
+  // Start Content
+  .content {
+    background-color: $dark-background2;
+  }
+  // End Content
+}
 
 // Start Header Switch
 .ant-switch {

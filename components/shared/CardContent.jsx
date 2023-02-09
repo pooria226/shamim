@@ -4,9 +4,9 @@ import Styles from "@/styles/scss/common/CardContent.module.scss";
 import CustomeCard from "./CustomeCard";
 import CardDivider from "./CardDivider";
 import AddIcon from "public/assets/images/svgs/add.svg";
-export default function CardContent() {
+export default function CardContent({ theme }) {
   return (
-    <Row className={Styles.lightWrapper}>
+    <Row className={theme ? Styles.lightWrapper : Styles.darkWrapper}>
       <Col span={24}>
         <CardDivider />
       </Col>
@@ -24,7 +24,9 @@ export default function CardContent() {
                 </Button>
               </div>
               <div>
-                <Button className={Styles.showMore}>
+                <Button
+                  className={theme ? Styles.lightShowMore : Styles.darkShowMore}
+                >
                   نمایش <br />
                   ...بیشتر
                 </Button>
@@ -32,28 +34,28 @@ export default function CardContent() {
             </div>
           </Col>
           <Col
-            className="mb-4 px-4"
+            className="mb-4 md:px-4 px-0"
             xl={{ span: 7 }}
             lg={{ span: 24 }}
             span={24}
           >
-            <CustomeCard />
+            <CustomeCard theme={theme} />
           </Col>
           <Col
-            className="mb-4 px-4"
+            className="mb-4 md:px-4 px-0"
             xl={{ span: 7 }}
             lg={{ span: 24 }}
             span={24}
           >
-            <CustomeCard />
+            <CustomeCard theme={theme} />
           </Col>
           <Col
-            className=" mb-4 px-4"
+            className=" mb-4 md:px-4 px-0"
             xl={{ span: 7 }}
             lg={{ span: 24 }}
             span={24}
           >
-            <CustomeCard />
+            <CustomeCard theme={theme} />
           </Col>
         </Row>
       </Col>

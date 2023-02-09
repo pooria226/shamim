@@ -12,19 +12,32 @@
   src: url("/assets/fonts/IRANSansWeb_Bold.ttf") format("truetype");
   src: url("/assets/fonts/IRANSansWeb(FaNum)_Bold.ttf");
 }
-body,
-html {
-  ::-webkit-scrollbar {
+
+.light-body {
+  &::-webkit-scrollbar {
     width: 10px;
   }
-  ::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-track {
     background: #e5e9f0;
   }
-  ::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
     background: #6e7191;
     border-radius: 12px;
   }
 }
+.dark-body {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $dark-background2;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #6e7191;
+    border-radius: 12px;
+  }
+}
+
 *,
 *::before,
 *::after {

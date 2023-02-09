@@ -1,3 +1,4 @@
+@import "../theme/index";
 .lightWrapper {
   background-color: white;
   border-radius: 16px;
@@ -6,6 +7,10 @@
 }
 
 .darkWrapper {
+  background-color: $dark-background;
+  border-radius: 16px;
+  box-shadow: 0 0 4px $dark-background;
+  padding: 16px;
 }
 .lightAboutMe {
   text-align: right;
@@ -15,11 +20,17 @@
   padding-right: 4px;
 }
 .darkAboutMe {
+  text-align: right;
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: white;
 }
 .wrapperList {
   text-align: right;
   padding-right: 8px;
-  .itemList {
+  .lightItemList {
     p {
       padding-right: 16px;
       position: relative;
@@ -29,6 +40,24 @@
         height: 4px;
         border-radius: 50%;
         background-color: black;
+        position: absolute;
+        right: 0;
+        top: 4px;
+      }
+    }
+  }
+  .darkItemList {
+    p {
+      padding-right: 16px;
+      position: relative;
+      color: white;
+      &::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: white;
+
         position: absolute;
         right: 0;
         top: 4px;

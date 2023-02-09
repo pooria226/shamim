@@ -4,9 +4,9 @@ import Styles from "@/styles/scss/common/InformationContent.module.scss";
 import CustomeDivider from "./CustomeDivider";
 import Avatar from "./Avatar";
 import TagItem from "./TagItem";
-export default function InformationContent() {
+export default function InformationContent({ theme }) {
   return (
-    <Row className={Styles.lightWrapper}>
+    <Row className={theme ? Styles.lightWrapper : Styles.darkWrapper}>
       <Col span={24}>
         <CustomeDivider text={"اطلاعات شناسایی"} />
       </Col>
@@ -26,7 +26,7 @@ export default function InformationContent() {
       </Col>
       <Col span={24}>
         <div className="py-4">
-          <p className={Styles.lightAboutMe}>
+          <p className={theme ? Styles.lightAboutMe : Styles.darkAboutMe}>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
             روزنامه و مجله در
           </p>
@@ -46,10 +46,10 @@ export default function InformationContent() {
       <Col span={24} className="pt-4">
         <div className={Styles.wrapperList}>
           <div>
-            <div className={Styles.itemList}>
+            <div className={theme ? Styles.lightItemList : Styles.darkItemList}>
               <p>کارشناس کامپیوتر - دانشگاه تبریز</p>
             </div>
-            <div className={Styles.itemList}>
+            <div className={theme ? Styles.lightItemList : Styles.darkItemList}>
               <p>مبانی طراحی - Udemy</p>
             </div>
           </div>
@@ -61,10 +61,10 @@ export default function InformationContent() {
       <Col span={24} className="pt-4">
         <div className={Styles.wrapperList}>
           <div>
-            <div className={Styles.itemList}>
+            <div className={theme ? Styles.lightItemList : Styles.darkItemList}>
               <p>کارشناس کامپیوتر - دانشگاه تبریز</p>
             </div>
-            <div className={Styles.itemList}>
+            <div className={theme ? Styles.lightItemList : Styles.darkItemList}>
               <p>مبانی طراحی - Udemy</p>
             </div>
           </div>
